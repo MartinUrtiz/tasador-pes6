@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P6L · Calculadora de valor de mercado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="brand">
+      <div class="crest">P6L</div>
+      <div class="brand-text">
+        <h1>P6L <span>·</span> Tasador</h1>
+        <p>Calculadora de valor · PES 6</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div>POSICIÓN<span id="meta-pos">DC · DELANTERO</span></div>
+      <div>STATS CLAVE<span id="meta-stats">13</span></div>
+      <div>TIER GLOBAL<span id="meta-tier">—</span></div>
+    </div>
+  </header>
+
+  <section class="positions">
+    <div class="section-label">Seleccionar posición</div>
+    <div class="pitch">
+      <div class="pos-grid" id="pos-grid"></div>
+    </div>
+  </section>
+
+  <div class="grid">
+
+    <section>
+      <div class="section-label">Cargar atributos del jugador</div>
+      <div class="stats-card">
+        <div class="stats-grid" id="stats-grid"></div>
+      </div>
+    </section>
+
+    <aside class="result-sticky">
+      <div class="section-label">Tasación</div>
+      <div class="ticket">
+        <div class="ticket-header">
+          <span>Boletín #P6L</span>
+          <span class="live"><span class="live-dot"></span>EN VIVO</span>
+        </div>
+        <div class="price-area">
+          <div class="price-label">Valor de mercado</div>
+          <div class="price-value"><span class="currency">$</span><span id="price">0</span><span class="suffix">M</span></div>
+          <div class="price-tier t-normal" id="tier-badge">
+            <span class="price-tier-dot"></span>
+            <span id="tier-text">Cargá las stats</span>
+          </div>
+        </div>
+        <div class="breakdown">
+          <div class="bd-title">Desglose por stat</div>
+          <div id="breakdown"></div>
+        </div>
+        <div class="actions">
+          <button class="btn" id="btn-reset">Resetear</button>
+          <button class="btn btn-primary" id="btn-fill">Auto · 70</button>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    P6L <span>·</span> PES 6 LATINOAMERICA <span>·</span> Mercado de Pases <span>·</span> v1.0
+  </footer>
+
+</div>
+
+<script src="logica.js"></script>
+
+</body>
+</html>
