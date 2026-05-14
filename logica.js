@@ -119,9 +119,9 @@ function tierFromValue(v) {
     { min: 70, max: 75, name: 'Normal',                cls: 'normal',    baseMin: -50,  baseMax: 150  },
     { min: 75, max: 80, name: 'Decente',               cls: 'decente',   baseMin: 150,  baseMax: 350  },
     { min: 80, max: 85, name: 'Bueno',                 cls: 'bueno',     baseMin: 350,  baseMax: 700  },
-    { min: 85, max: 90, name: 'Muy bueno',             cls: 'muybueno',  baseMin: 700,  baseMax: 1300 },
-    { min: 90, max: 95, name: 'Excelente',             cls: 'excelente', baseMin: 1300, baseMax: 3400 },
-    { min: 95, max: 99, name: 'Extremadamente bueno',  cls: 'extremo',   baseMin: 3400, baseMax: 9800 },
+    { min: 85, max: 90, name: 'Muy bueno',             cls: 'muybueno',  baseMin: 700,  baseMax: 1000 },
+    { min: 90, max: 95, name: 'Excelente',             cls: 'excelente', baseMin: 1000, baseMax: 2700 },
+    { min: 95, max: 99, name: 'Extremadamente bueno',  cls: 'extremo',   baseMin: 2700, baseMax: 9000 },
   ];
 
   const tier = tiers.find(t => v < t.max) || tiers[tiers.length - 1];
